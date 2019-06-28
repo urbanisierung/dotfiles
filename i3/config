@@ -173,6 +173,9 @@ bindsym $mod+c exec --no-startup-id google-chrome
 # Lock screen
 bindsym $mod+F11 exec i3lock-fancy
 
+# move current workspace to left
+bindsym $mod+m move workspace to output left
+
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3exit lock, mode "default"
