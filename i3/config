@@ -167,6 +167,9 @@ bindsym $mod+F9 exec i3undock undock
 # Enable external monitor again
 bindsym $mod+F10 exec i3undock dock
 
+# start chrome
+bindsym $mod+c exec --no-startup-id google-chrome
+
 # Lock screen
 bindsym $mod+F11 exec i3lock-fancy
 
