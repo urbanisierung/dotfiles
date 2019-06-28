@@ -1,0 +1,16 @@
+#!/bin/sh
+
+case "$1" in
+    undock)
+          xrandr --output DP-1-1 --off
+          i3lock-fancy
+          ;;
+    dock)
+          xrandr --output DP-1-1 --auto --left-of eDP-1
+          ;;
+    *)
+          echo "parameter dock or undock"
+          exit 2
+esac
+
+exit 0

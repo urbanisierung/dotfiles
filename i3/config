@@ -161,6 +161,15 @@ bar {
         status_command i3status
 }
 
+# Undock
+bindsym $mod+F9 exec i3undock undock
+
+# Enable external monitor again
+bindsym $mod+F10 exec i3undock dock
+
+# Lock screen
+bindsym $mod+F11 exec i3lock-fancy
+
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3exit lock, mode "default"
@@ -174,4 +183,4 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Pause mode "$mode_system"
+bindsym $mod+F12 mode "$mode_system"
