@@ -189,4 +189,31 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+F12 mode "$mode_system"
+
+bindsym $mod+O mode "$mode_system"
+
+# audio soft keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
+
+# Screen brightness controls
+bindsym XF86MonBrightnessUp exec ~/.config/scripts/brightness.sh + eDP-1
+bindsym XF86MonBrightnessDown exec ~/.config/scripts/brightness.sh - eDP-1
+
+# Lock shortcut
+bindsym ctrl+$mod+l exec --no-startup-id sleep 1 && ~/.config/scripts/lock.sh
+
+# Lock on lid close move to bashrc
+exec --no-startup-id xss-lock -- ~/.config/scripts/lock.sh
+
+# Start ibus deamon to disable emoji shortcut
+exec --no-startup-id /usr/bin/ibus-daemon -d
+
+# Start external monitor detection for UWQHD
+exec --no-startup-id ~/.config/scripts/monitor.sh
+
+bindsym ctrl+$mod+m exec --no-startup-id ~/.config/scripts/monitor.sh

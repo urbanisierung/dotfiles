@@ -6,4 +6,16 @@ if [ "$1" = "get" ]; then
   cp /usr/bin/i3undock bin/
   cp ~/.config/i3/config i3/
   cp ~/.zshrc .
+  cp ~/.config/scripts/brightness.sh scripts/
+  cp ~/.config/scripts/lock-lid.sh scripts/
+  cp ~/.config/scripts/lock.sh scripts/
+  cp ~/.config/scripts/monitor.sh scripts/
+fi
+
+if [ "$1" = "push" ]; then
+  mkdir ~/.config/wallpaper
+  mkdir ~/.config/scripts
+  cp scripts/* ~/.config/scripts
+  cp i3/config ~/.config/i3/config
+  sudo cp bin/* /usr/bin
 fi
