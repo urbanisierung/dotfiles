@@ -208,6 +208,10 @@ bindsym XF86MonBrightnessDown exec ~/.config/scripts/brightness.sh - eDP-1
 # Lock shortcut
 bindsym ctrl+$mod+l exec --no-startup-id sleep 1 && ~/.config/scripts/lock.sh
 
+# Start network manager
+bindsym ctrl+$mod+n exec --no-startup-id nm-connection-editor
+
+
 # Lock on lid close move to bashrc
 exec --no-startup-id xss-lock -- ~/.config/scripts/lock.sh
 
