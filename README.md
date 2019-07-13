@@ -11,6 +11,7 @@
 * kubectl
 * gcloud
 * mongodb
+* docker
 
 ### system
 * zsh
