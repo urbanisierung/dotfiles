@@ -22,6 +22,7 @@
 * blueman
 * gtop
 * neofetch
+* python(3) and pip(3)
 
 ### media
 * shutter
