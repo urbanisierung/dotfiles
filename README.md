@@ -20,6 +20,7 @@
 * pavucontrol
 * pactl
 * blueman
+* gtop
 
 ### media
 * shutter
