@@ -3,19 +3,32 @@
 * sync.sh contains all relevant synced files - execute it to fetch them
 
 ## to install:
+
+### dev
 * vscode
-* chrome
 * gitkraken
+* node
 * kubectl
 * gcloud
 * mongodb
+
+### system
 * zsh
 * oh-my-zsh
 * pulseaudio
 * pavucontrol
 * pactl
 * blueman
-* slack
-* brave
-* zoom
+
+### media
 * shutter
+* feh
+
+### browser
+* chrome
+* brave
+
+### colab
+* slack
+* zoom
+
