@@ -16,7 +16,8 @@ set $mod Mod4
 font pango:monospace 8
 
 # background pic
-exec --no-startup-id feh --bg-fill ~/.config/wallpaper/mrrobot.jpg
+# exec --no-startup-id feh --bg-fill ~/.config/wallpaper/mrrobot.jpg
+exec --no-startup-id feh --bg-fill ~/.config/wallpaper/dreams.png
 
 # background color
 # exec --no-startup-id xsetroot -solid "#333333"
@@ -214,6 +215,13 @@ exec --no-startup-id xss-lock -- ~/.config/scripts/lock.sh
 exec --no-startup-id /usr/bin/ibus-daemon -d
 
 # Start external monitor detection for UWQHD
-exec --no-startup-id ~/.config/scripts/monitor.sh
+# exec --no-startup-id ~/.config/scripts/monitor.sh
+# bindsym ctrl+$mod+m exec --no-startup-id ~/.config/scripts/monitor.sh
 
-bindsym ctrl+$mod+m exec --no-startup-id ~/.config/scripts/monitor.sh
+exec --no-startup-id i3undock dock
+
+# disable screensaver
+
+exec --no-startup-id xset s off
+# power saving:
+# exec --no-startup-id xset -dpms
