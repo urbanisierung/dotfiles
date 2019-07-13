@@ -21,6 +21,7 @@
 * pactl
 * blueman
 * gtop
+* neofetch
 
 ### media
 * shutter
