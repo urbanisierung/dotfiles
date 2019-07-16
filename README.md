@@ -6,12 +6,13 @@
 
 ### dev
 * vscode
-* gitkraken
 * node
+* postman
 * kubectl
 * gcloud
 * mongodb
 * docker
+* gitkraken / tig for command line
 
 ### system
 * zsh
