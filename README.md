@@ -38,3 +38,9 @@
 * slack
 * zoom
 
+## configure
+
+### git
+* get access token
+* create token store: `https://bob:s3cre7@mygithost`
+* configure git to use it: `git config --global credential.helper 'store --file ~/.my-credentials'`
