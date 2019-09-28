@@ -6,6 +6,13 @@
 
 ### dev
 * vscode
+  * Extensions
+    * [Peacock](https://github.com/johnpapa/vscode-peacock)
+  * Themes:
+    * [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
+    * [Dracula](https://draculatheme.com/visual-studio-code/)
+  * Fonts:
+    * [Dank Mono](https://dank.sh/)
 * node
 * postman
 * kubectl
