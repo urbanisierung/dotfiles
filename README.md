@@ -11,6 +11,7 @@
   * Themes:
     * [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
     * [Dracula](https://draculatheme.com/visual-studio-code/)
+    * [Yonce](https://yoncetheme.com/)
   * Fonts:
     * [Dank Mono](https://dank.sh/)
 * node
