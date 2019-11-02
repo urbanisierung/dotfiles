@@ -8,6 +8,10 @@
 * vscode
   * Extensions
     * [Peacock](https://github.com/johnpapa/vscode-peacock)
+    * Better writing:
+      * [AlexJS - doc linter](https://alexjs.com/)
+      * [Write Good Linter](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
+      * [Vale](https://marketplace.visualstudio.com/items?itemName=testthedocs.vale)
   * Themes:
     * [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
     * [Dracula](https://draculatheme.com/visual-studio-code/)
