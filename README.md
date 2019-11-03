@@ -37,6 +37,7 @@
 * neofetch
 * python(3) and pip(3)
 * wal
+* ktop
 
 ### media
 * shutter
