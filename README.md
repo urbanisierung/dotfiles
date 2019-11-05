@@ -38,6 +38,7 @@
 * python(3) and pip(3)
 * wal
 * ktop
+* arandr
 
 ### media
 * shutter
