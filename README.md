@@ -1,39 +1,148 @@
-# dotfiles
+# urbanisierungs dotfiles
 
-* sync.sh contains all relevant synced files - execute it to fetch them
+```bash
+    .___      __    _____.__.__                 
+  __| _/_____/  |__/ ____\__|  |   ____   ______
+ / __ |/  _ \   __\   __\|  |  | _/ __ \ /  ___/
+/ /_/ (  <_> )  |  |  |  |  |  |_\  ___/ \___ \ 
+\____ |\____/|__|  |__|  |__|____/\___  >____  >
+     \/                               \/     \/ 
+```
 
-## to install:
+Config files for i3, zsh and some scripts. Furthermore useful apps I use all the time.
 
-### dev
-* vscode
-* gitkraken
-* node
-* kubectl
-* gcloud
-* mongodb
-* docker
+## sync config files
 
-### system
-* zsh
-* oh-my-zsh
-* pulseaudio
-* pavucontrol
-* pactl
-* blueman
-* gtop
-* neofetch
-* python(3) and pip(3)
-* wal
+get all config files:
 
-### media
-* shutter
-* feh
+```bash
+./sync.sh get
+```
 
-### browser
-* chrome
-* brave
+copy all config files to system:
 
-### colab
-* slack
-* zoom
+```bash
+./sync.sh push
+```
 
+## Tools
+
+### [VSCode](https://code.visualstudio.com/) - the most powerful IDE I know
+
+```bash
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+```
+
+- Extensions
+  - [Peacock](https://github.com/johnpapa/vscode-peacock)
+  - Better writing:
+    - [AlexJS - doc linter](https://alexjs.com/)
+    - [Write Good Linter](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
+    - [Vale](https://marketplace.visualstudio.com/items?itemName=testthedocs.vale)
+- Themes:
+  - [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
+  - [Dracula](https://draculatheme.com/visual-studio-code/)
+  - [Yonce](https://yoncetheme.com/)
+- Fonts:
+  - [Dank Mono](https://dank.sh/)
+
+### Frameworks and tools
+
+- [Node](https://nodejs.org/en/) - (hopefully) no description needed
+
+```bash
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+```
+
+- [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) - K8s command line tools
+
+```bash
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+```
+
+- [gcloud](https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu)
+
+```bash
+# Create environment variable for correct distribution
+export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+
+# Add the Cloud SDK distribution URI as a package source
+echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+
+# Import the Google Cloud Platform public key
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
+# Update the package list and install the Cloud SDK
+sudo apt-get update && sudo apt-get install google-cloud-sdk
+```
+
+- [docker](https://www.docker.com/)
+
+```bash
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+- [docker compose](https://docs.docker.com/compose/install/)
+
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
+
+- python(3) and pip(3)
+
+## System
+
+- [i3](https://i3wm.org/) - the very very best window manager for linux
+- [zsh](http://www.zsh.org/)
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+- pulseaudio
+- pavucontrol
+- pactl
+- blueman
+- [gtop](https://github.com/aksakalli/gtop) - system monitoring
+- [neofetch](https://github.com/dylanaraps/neofetch) - information tool
+- [pywal](https://github.com/dylanaraps/pywal) - generate and change color schemes
+- [ktop](https://github.com/ynqa/ktop) - top for k8s
+- [arandr](https://christian.amsuess.com/tools/arandr/) - simple gui for xrandr
+- [tig](https://github.com/jonas/tig) - text mode interface for git
+
+## Media
+
+- shutter
+- feh
+
+## Browser
+
+- chrome
+- brave
+
+## Colab
+
+- slack
+- zoom
