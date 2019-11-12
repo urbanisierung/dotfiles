@@ -39,7 +39,9 @@ sudo apt install code
 ```
 
 - Extensions
-  - [Peacock](https://github.com/johnpapa/vscode-peacock)
+  - [Peacock](https://github.com/johnpapa/vscode-peacock) - colorize different projects
+  - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+  - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
   - Better writing:
     - [AlexJS - doc linter](https://alexjs.com/)
     - [Write Good Linter](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
@@ -131,6 +133,11 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 - [ktop](https://github.com/ynqa/ktop) - top for k8s
 - [arandr](https://christian.amsuess.com/tools/arandr/) - simple gui for xrandr
 - [tig](https://github.com/jonas/tig) - text mode interface for git
+- [ngrok](https://ngrok.com/) - tunnel your local project easily
+- [svgo](https://github.com/svg/svgo) - svg optimizer
+- [tldr](https://tldr.sh/) - better man pages
+- [gitmoji](https://github.com/carloscuesta/gitmoji-cli)
+- [fkill](https://github.com/sindresorhus/fkill-cli) - fabulously kill processes
 
 ## Media
 
