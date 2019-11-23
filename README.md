@@ -155,6 +155,8 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 - [Sonos](http://www.sonos.com/redir/controller_software_mac)
 - [VLC](https://www.videolan.org/vlc/download-macosx.html)
 - [VSCode](https://code.visualstudio.com/download)
+- [Brew](https://brew.sh/)
+- [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 ## Media
 
