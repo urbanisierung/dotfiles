@@ -139,6 +139,23 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 - [gitmoji](https://github.com/carloscuesta/gitmoji-cli)
 - [fkill](https://github.com/sindresorhus/fkill-cli) - fabulously kill processes
 
+## Mac
+
+- [1Password](https://1password.com/downloads/mac/)
+- [Calibbre](https://calibre-ebook.com/)
+- [Caffeine](http://lightheadsw.com/caffeine/)
+- [Disk Graph](https://apps.apple.com/de/app/disk-graph/id697942581?mt=12)
+- [Affinity Photo](https://apps.apple.com/de/app/affinity-photo/id824183456?mt=12)
+- [Affinity Designer](https://apps.apple.com/us/app/affinity-designer/id824171161?mt=12)
+- [Dropbox](https://www.dropbox.com/downloading)
+- [FileZilla](https://filezilla-project.org/download.php?platform=osx)
+- [Ledger Live](https://shop.ledger.com/pages/ledger-live)
+- [Notion](https://www.notion.so/desktop)
+- [Outbank](https://apps.apple.com/de/app/outbank-alle-banken-und-konten/id1094255754?ls=1&mt=12)
+- [Sonos](http://www.sonos.com/redir/controller_software_mac)
+- [VLC](https://www.videolan.org/vlc/download-macosx.html)
+- [VSCode](https://code.visualstudio.com/download)
+
 ## Media
 
 - shutter
