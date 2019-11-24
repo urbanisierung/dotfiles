@@ -56,6 +56,7 @@ sudo apt install code
   - [Yonce](https://yoncetheme.com/)
 - Fonts:
   - [Dank Mono](https://dank.sh/)
+  - [Fira Code](https://github.com/tonsky/FiraCode)
 
 ### Frameworks and tools
 
