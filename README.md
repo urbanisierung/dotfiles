@@ -144,7 +144,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 - [1Password](https://1password.com/downloads/mac/)
 - [Calibbre](https://calibre-ebook.com/)
-- [Caffeine](http://lightheadsw.com/caffeine/)
+- [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - alternative for [Caffeine](http://lightheadsw.com/caffeine/)
 - [Disk Graph](https://apps.apple.com/de/app/disk-graph/id697942581?mt=12)
 - [Affinity Photo](https://apps.apple.com/de/app/affinity-photo/id824183456?mt=12)
 - [Affinity Designer](https://apps.apple.com/us/app/affinity-designer/id824171161?mt=12)
