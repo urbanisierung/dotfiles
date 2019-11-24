@@ -46,7 +46,11 @@ sudo apt install code
     - [AlexJS - doc linter](https://alexjs.com/)
     - [Write Good Linter](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
     - [Vale](https://marketplace.visualstudio.com/items?itemName=testthedocs.vale)
+  - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+  - [NodeJS Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
+  - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 - Themes:
+  - [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
   - [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
   - [Dracula](https://draculatheme.com/visual-studio-code/)
   - [Yonce](https://yoncetheme.com/)
