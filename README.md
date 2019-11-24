@@ -162,6 +162,8 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 - [VLC](https://www.videolan.org/vlc/download-macosx.html)
 - [VSCode](https://code.visualstudio.com/download)
 - [Brew](https://brew.sh/)
+- [Vanilla](https://matthewpalmer.net/vanilla/)
+- [Licecap](https://www.cockos.com/licecap/) - create gifs
 - [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 ## Media
