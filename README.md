@@ -117,6 +117,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
 - python(3) and pip(3)
+- [insomnia](https://insomnia.rest/download/#ubuntu)
 
 ## System
 
