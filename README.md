@@ -148,6 +148,8 @@ sudo snap install insomnia
 - [tldr](https://tldr.sh/) - better man pages
 - [gitmoji](https://github.com/carloscuesta/gitmoji-cli)
 - [fkill](https://github.com/sindresorhus/fkill-cli) - fabulously kill processes
+- [albert](https://albertlauncher.github.io/) - access everything
+- [copyQ](https://github.com/hluk/CopyQ) - advanced clipboard
 
 ## Mac
 
