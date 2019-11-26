@@ -124,6 +124,10 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 - python(3) and pip(3)
 - [insomnia](https://insomnia.rest/download/#ubuntu)
 
+```bash
+sudo snap install insomnia
+```
+
 ## System
 
 - [i3](https://i3wm.org/) - the very very best window manager for linux
