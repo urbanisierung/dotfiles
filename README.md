@@ -49,6 +49,7 @@ sudo apt install code
   - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
   - [NodeJS Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
   - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
+  - [Cloud Code](https://cloud.google.com/code/docs/vscode/quickstart)
 - Themes:
   - [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
   - [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
