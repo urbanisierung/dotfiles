@@ -151,6 +151,7 @@ sudo snap install insomnia
 - [fkill](https://github.com/sindresorhus/fkill-cli) - fabulously kill processes
 - [albert](https://albertlauncher.github.io/) - access everything
 - [copyQ](https://github.com/hluk/CopyQ) - advanced clipboard
+- [curlmail](https://curlmail.co/) - curl you a notify
 
 ## Mac
 
