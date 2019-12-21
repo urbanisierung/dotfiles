@@ -152,6 +152,7 @@ sudo snap install insomnia
 - [albert](https://albertlauncher.github.io/) - access everything
 - [copyQ](https://github.com/hluk/CopyQ) - advanced clipboard
 - [curlmail](https://curlmail.co/) - curl you a notify
+- [asciinema](https://github.com/asciinema/asciinema) - terminal session recorder
 
 ## Mac
 
