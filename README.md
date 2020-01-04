@@ -78,6 +78,9 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 ```
 
+- Kubectl plugins:
+  - [Kubectl tree](https://github.com/ahmetb/kubectl-tree): browse Kubernetes object hierarchies as a tree
+
 - [gcloud](https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu)
 
 ```bash
