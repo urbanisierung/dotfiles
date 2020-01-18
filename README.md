@@ -132,6 +132,8 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo snap install insomnia
 ```
 
+- Linter for TypeScript/Node: [Aurora](https://github.com/ScreamZ/aurora)
+
 ## System
 
 - [i3](https://i3wm.org/) - the very very best window manager for linux
