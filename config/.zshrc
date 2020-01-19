@@ -21,13 +21,22 @@ alias restartnw="sudo service network-manager restart"
 alias pglocal="pgcli postgresql://postgres:mysecretpassword@0.0.0.0:5432"
 
 source ~/.config/envvars/aliases.env
+source ~/.config/envvars/accounts_signup.env
+source ~/.config/envvars/e2e_dev.env
+source ~/.config/envvars/github.env
+# source ~/.config/envvars/e2e_int.env
+
+alias e2edev="source ~/.config/envvars/e2e_dev.env"
+alias e2eint="source ~/.config/envvars/e2e_int.env"
 
 # further exports
 
 export GOPATH=$HOME/work
 export GOROOT=/usr/local/go
 export GOBIN=$GOPATH/bin
+export GO111MODULE=on
 
 export KUBEBUILDERBIN=/usr/local/kubebuilder/bin
 
 export PATH=$KUBEBUILDERBIN:$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
