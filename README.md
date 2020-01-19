@@ -58,6 +58,12 @@ sudo apt install code
 - Fonts:
   - [Dank Mono](https://dank.sh/)
   - [Fira Code](https://github.com/tonsky/FiraCode)
+  - [JetBrains Mono](https://www.jetbrains.com/lp/mono)
+  ```json
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true
+  ```
 
 ### Frameworks and tools
 
