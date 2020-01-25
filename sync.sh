@@ -6,6 +6,7 @@ if [ "$1" = "get" ]; then
   cp /usr/bin/i3undock bin/
   cp ~/.config/i3/config i3/
   cp /etc/i3status.conf i3/
+  cp /etc/i3blocks.conf i3/
   cp ~/.zshrc config/
   cp ~/.config/scripts/brightness.sh scripts/
   cp ~/.config/scripts/lock-lid.sh scripts/
@@ -22,5 +23,6 @@ if [ "$1" = "push" ]; then
   cp config/settings.json ~/.config/Code/User/settings.json
   cp i3/config ~/.config/i3/config
   sudo cp i3/i3status.conf /etc/
+  sudo cp i3/i3blocks.conf /etc/
   sudo cp bin/* /usr/bin
 fi
