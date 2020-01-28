@@ -146,6 +146,7 @@ sudo snap install insomnia
 - [i3](https://i3wm.org/) - the very very best window manager for linux
   - i3blocks, rofi, aptitude
   - i3blocks [booklets](https://vivien.github.io/i3blocks/blocklets)
+  - [my i3blocks booklets](https://github.com/urbanisierung/i3blocks-booklets)
 - [zsh](http://www.zsh.org/)
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 - [zinit](https://github.com/zdharma/zinit)
