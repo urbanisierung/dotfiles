@@ -152,6 +152,7 @@ sudo snap install insomnia
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 - [zinit](https://github.com/zdharma/zinit)
 - [hub cli](https://hub.github.com/)
+- [GitHub CLI](https://cli.github.com/)
 - pulseaudio
 - pavucontrol
 - pactl
