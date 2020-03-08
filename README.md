@@ -208,3 +208,8 @@ sudo snap install insomnia
 
 - slack
 - zoom
+
+## Fonts
+
+- https://www.zetafonts.com/hagrid#
+- https://www.cufonfonts.com/font/segoe-pro
