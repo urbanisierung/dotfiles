@@ -50,6 +50,7 @@ sudo apt install code
   - [NodeJS Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
   - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
   - [Cloud Code](https://cloud.google.com/code/docs/vscode/quickstart)
+  - [Code Tour](https://github.com/vsls-contrib/codetour)
 - Themes:
   - [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
   - [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
