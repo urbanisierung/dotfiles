@@ -146,12 +146,14 @@ sudo snap install insomnia
 
 - [i3](https://i3wm.org/) - the very very best window manager for linux
   - i3blocks, rofi, aptitude
+    - use `rofi-theme-selector` to change rofi theme
   - i3blocks [booklets](https://vivien.github.io/i3blocks/blocklets)
   - [my i3blocks booklets](https://github.com/urbanisierung/i3blocks-booklets)
 - [zsh](http://www.zsh.org/)
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 - [zinit](https://github.com/zdharma/zinit)
 - [hub cli](https://hub.github.com/)
+- [GitHub CLI](https://cli.github.com/)
 - pulseaudio
 - pavucontrol
 - pactl
@@ -207,3 +209,8 @@ sudo snap install insomnia
 
 - slack
 - zoom
+
+## Fonts
+
+- https://www.zetafonts.com/hagrid#
+- https://www.cufonfonts.com/font/segoe-pro
