@@ -174,6 +174,7 @@ sudo snap install insomnia
 - [curlmail](https://curlmail.co/) - curl you a notify
 - [asciinema](https://github.com/asciinema/asciinema) - terminal session recorder ([gifcast](https://dstein64.github.io/gifcast/) to create gif)
 - [kubelens](https://github.com/lensapp/lens) - IDE for kubernetes
+- [flameshot](https://flameshot.js.org/#/) - screenshot tool
 
 ## Mac
 
@@ -198,7 +199,6 @@ sudo snap install insomnia
 
 ## Media
 
-- shutter
 - feh
 
 ## Browser

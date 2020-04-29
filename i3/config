@@ -208,7 +208,7 @@ bindsym $mod+O mode "$mode_system"
 # my custom apps
 set $mode_apps Screenshot (s), Network Man (n),  Background (b), TouchPad reset (t)
 mode "$mode_apps" {
-    bindsym s exec --no-startup-id shutter -s
+    bindsym s exec --no-startup-id flameshot gui
     bindsym b exec --no-startup-id feh --bg-fill ~/.config/wallpaper/dreams.png
     bindsym n exec --no-startup-id nm-connection-editor
     bindsym t exec --no-startup-id sudo modprobe -r psmouse && sudo modprobe psmouse
