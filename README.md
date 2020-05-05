@@ -52,6 +52,7 @@ sudo apt install code
   - [Cloud Code](https://cloud.google.com/code/docs/vscode/quickstart)
   - [Code Tour](https://github.com/vsls-contrib/codetour)
   - [Vuln Cost](https://snyk.io/security-scanner-vuln-cost/)
+  - [i18n-ally](https://github.com/antfu/i18n-ally)
 - Themes:
   - [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
   - [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
