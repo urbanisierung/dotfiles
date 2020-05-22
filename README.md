@@ -177,6 +177,7 @@ sudo snap install insomnia
 - [kubelens](https://github.com/lensapp/lens) - IDE for kubernetes
 - [flameshot](https://flameshot.js.org/#/) - screenshot tool
 - [git-stats](https://github.com/IonicaBizau/git-stats) - git hub stats
+- [lighthouse](https://www.npmjs.com/package/lighthouse) - lighthouse via cli
 
 ## Mac
 
