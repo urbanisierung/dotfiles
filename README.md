@@ -179,6 +179,7 @@ sudo snap install insomnia
 - [flameshot](https://flameshot.js.org/#/) - screenshot tool
 - [git-stats](https://github.com/IonicaBizau/git-stats) - git hub stats
 - [lighthouse](https://www.npmjs.com/package/lighthouse) - lighthouse via cli
+- [ncdu](https://dev.yorhel.nl/ncdu) - disk usage analyzer
 
 ## Mac
 
