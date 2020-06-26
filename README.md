@@ -180,6 +180,7 @@ sudo snap install insomnia
 - [git-stats](https://github.com/IonicaBizau/git-stats) - git hub stats
 - [lighthouse](https://www.npmjs.com/package/lighthouse) - lighthouse via cli
 - [ncdu](https://dev.yorhel.nl/ncdu) - disk usage analyzer
+- [fd](https://github.com/sharkdp/fd) - better `find`
 
 ## Mac
 
