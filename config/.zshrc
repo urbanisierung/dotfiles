@@ -62,3 +62,12 @@ function get_cluster_short() {
 KUBE_PS1_CLUSTER_FUNCTION=get_cluster_short
 
 PROMPT='$(kube_ps1)'$PROMPT
+
+# fbd - delete git branch (including remote branches)
+# read https://peterp.me/cli-tips-interactive-branch-delete/
+fbd() {
+  local branches branch
+  branches=$(git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format="%(refname:short)") &&
+  branch=$(echo "$branches" | fzf --multi ) &&
+  git branch -D $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+}
