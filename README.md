@@ -182,6 +182,7 @@ sudo snap install insomnia
 - [fzf](https://github.com/junegunn/fzf) - general-purpose command-line fuzzy finder
 - [ncdu](https://dev.yorhel.nl/ncdu) - disk usage analyzer
 - [fd](https://github.com/sharkdp/fd) - better `find`
+- [tmpmail](https://github.com/sdushantha/tmpmail) - temp mail addresses via command line
 
 ## Mac
 
