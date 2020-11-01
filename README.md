@@ -183,6 +183,7 @@ sudo snap install insomnia
 - [ncdu](https://dev.yorhel.nl/ncdu) - disk usage analyzer
 - [fd](https://github.com/sharkdp/fd) - better `find`
 - [tmpmail](https://github.com/sdushantha/tmpmail) - temp mail addresses via command line
+- [icloud-for-linux](https://snapcraft.io/install/icloud-for-linux/ubuntu) - icloud for linux: makes it ieasier to use the icloud suite under linux
 
 ## Mac
 
