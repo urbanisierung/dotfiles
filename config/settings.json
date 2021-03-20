@@ -79,7 +79,7 @@
             "value": "#42b883"
         }
     ],
-    "workbench.colorTheme": "Panda Syntax",
+    "workbench.colorTheme": "Dracula",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -102,5 +102,17 @@
     },
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "java.semanticHighlighting.enabled": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "sync.gist": "a2cf97dfe4fc6104dac31475551e424a"
 }

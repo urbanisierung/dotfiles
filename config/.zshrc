@@ -18,6 +18,7 @@ source $ZSH/oh-my-zsh.sh
 alias fixtouchpad="sudo modprobe -r psmouse && sudo modprobe psmouse"
 alias restartnw="sudo service network-manager restart"
 alias pglocal="pgcli postgresql://postgres:mysecretpassword@0.0.0.0:5432"
+alias pitch="~/dev/apps/pitch/pitch.AppImage"
 
 source ~/.config/envvars/aliases.env
 source ~/.config/envvars/accounts_signup.env
@@ -61,10 +62,13 @@ function get_cluster_short() {
 
 KUBE_PS1_CLUSTER_FUNCTION=get_cluster_short
 
+# eval "$(starship init zsh)"
+
 PROMPT='$(kube_ps1)'$PROMPT
 
+# eval "$(starship init zsh)"
+
 # fbd - delete git branch (including remote branches)
-# read https://peterp.me/cli-tips-interactive-branch-delete/
 fbd() {
   local branches branch
   branches=$(git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format="%(refname:short)") &&
