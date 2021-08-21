@@ -1,12 +1,12 @@
 # urbanisierungs dotfiles
 
 ```bash
-    .___      __    _____.__.__                 
+    .___      __    _____.__.__
   __| _/_____/  |__/ ____\__|  |   ____   ______
  / __ |/  _ \   __\   __\|  |  | _/ __ \ /  ___/
-/ /_/ (  <_> )  |  |  |  |  |  |_\  ___/ \___ \ 
+/ /_/ (  <_> )  |  |  |  |  |  |_\  ___/ \___ \
 \____ |\____/|__|  |__|  |__|____/\___  >____  >
-     \/                               \/     \/ 
+     \/                               \/     \/
 ```
 
 Config files for i3, zsh and some scripts. Furthermore useful apps I use all the time.
@@ -56,9 +56,11 @@ sudo apt install code
 - Themes:
   - [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
   - [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
-  - [Dracula](https://draculatheme.com/visual-studio-code/)
+  - [Dracula](https://draculatheme.com/visual-studio-code/) HOT
   - [Yonce](https://yoncetheme.com/)
+  - [serendipity](https://wvsc.dev/)
 - Fonts:
+
   - [Dank Mono](https://dank.sh/)
   - [Fira Code](https://github.com/tonsky/FiraCode)
   - [JetBrains Mono](https://www.jetbrains.com/lp/mono)
@@ -89,6 +91,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 ```
 
 - Kubectl plugins:
+
   - [Kubectl tree](https://github.com/ahmetb/kubectl-tree): browse Kubernetes object hierarchies as a tree
 
 - [gcloud](https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu)
