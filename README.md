@@ -159,6 +159,7 @@ sudo snap install insomnia
 - [zinit](https://github.com/zdharma/zinit)
 - [hub cli](https://hub.github.com/)
 - [GitHub CLI](https://cli.github.com/)
+- 7z: `sudo apt-get install p7zip-full`
 - pulseaudio
 - pavucontrol
 - pactl
