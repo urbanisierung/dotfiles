@@ -92,7 +92,6 @@
     "gitlens.advanced.messages": {
         "suppressLineUncommittedWarning": true
     },
-    "window.zoomLevel": 0,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.minimap.enabled": false,
     "cloudcode.gke": {
@@ -114,5 +113,11 @@
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
     "diffEditor.ignoreTrimWhitespace": false,
-    "sync.gist": "a2cf97dfe4fc6104dac31475551e424a"
+    "sync.gist": "a2cf97dfe4fc6104dac31475551e424a",
+    "[solidity]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.confirmSync": false,
+    "editor.inlineSuggest.enabled": true
 }

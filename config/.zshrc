@@ -1,8 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export PATH=$PATH:/home/adam/.bin/bin
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export EDITOR="nano"
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
@@ -19,6 +22,7 @@ alias fixtouchpad="sudo modprobe -r psmouse && sudo modprobe psmouse"
 alias restartnw="sudo service network-manager restart"
 alias pglocal="pgcli postgresql://postgres:mysecretpassword@0.0.0.0:5432"
 alias pitch="~/dev/apps/pitch/pitch.AppImage"
+alias backup="source ~/.config/envvars/backup.env && ~/dev/my/dotfiles/homebackup.mjs"
 
 source ~/.config/envvars/aliases.env
 source ~/.config/envvars/accounts_signup.env
@@ -74,4 +78,8 @@ fbd() {
   branches=$(git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format="%(refname:short)") &&
   branch=$(echo "$branches" | fzf --multi ) &&
   git branch -D $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+}
+
+function zshaddhistory() {
+  echo "${1%%$'\n'}|${PWD}   " >> ~/.zsh_history_ext
 }

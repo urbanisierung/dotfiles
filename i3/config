@@ -175,7 +175,7 @@ bindsym $mod+F9 exec i3undock undock
 bindsym $mod+F10 exec i3undock dock
 
 # start chrome
-bindsym $mod+c exec --no-startup-id google-chrome
+bindsym $mod+c exec --no-startup-id google-chrome --profile-directory=Default
 
 # start vscode
 bindsym $mod+x exec --no-startup-id code
@@ -208,14 +208,16 @@ bindsym $mod+F12 mode "$mode_system"
 bindsym $mod+O mode "$mode_system"
 
 # my custom apps
-set $mode_apps Screenshot (s), Network Man (n),  Background (b), TouchPad reset (t), Wifi ON (w), Wifi OFF (q), Zoom (z)
+# set $mode_apps Screenshot (s), Network Man (n),  Background (b), TouchPad reset (t), Wifi ON (w), Wifi OFF (q), Zoom (z)
+set $mode_apps Screenshot (s), Control Center (c),  Background (b), TouchPad reset (t), Zoom (z)
 mode "$mode_apps" {
     bindsym s exec --no-startup-id flameshot gui
     bindsym b exec --no-startup-id feh --bg-fill ~/.config/wallpaper/dreams.png
-    bindsym n exec --no-startup-id nm-connection-editor
+    # bindsym n exec --no-startup-id nm-connection-editor
     bindsym t exec --no-startup-id sudo modprobe -r psmouse && sudo modprobe psmouse
-    bindsym w exec --no-startup-id nmcli radio wifi on
-    bindsym q exec --no-startup-id nmcli radio wifi off
+    bindsym c exec --no-startup-id gnome-control-center
+    # bindsym w exec --no-startup-id nmcli radio wifi on
+    # bindsym q exec --no-startup-id nmcli radio wifi off
     bindsym z exec --no-startup-id i3-msg 'workspace 1; exec zoom'
     bindsym Return mode "default"
     bindsym Escape mode "default"
