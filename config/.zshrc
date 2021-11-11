@@ -23,6 +23,7 @@ alias restartnw="sudo service network-manager restart"
 alias pglocal="pgcli postgresql://postgres:mysecretpassword@0.0.0.0:5432"
 alias pitch="~/dev/apps/pitch/pitch.AppImage"
 alias backup="source ~/.config/envvars/backup.env && ~/dev/my/dotfiles/homebackup.mjs"
+alias dmy="cd ~/dev/my"
 
 source ~/.config/envvars/aliases.env
 source ~/.config/envvars/accounts_signup.env
