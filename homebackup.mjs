@@ -29,7 +29,7 @@ const CONFIG_FOLDERS = [
   `stripe`,
 ];
 
-const HOME_FOLDERS = [`.ssh`];
+const HOME_FOLDERS = [`.config/keys`, `.ssh`];
 
 // FILES
 
