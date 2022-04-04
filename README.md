@@ -189,6 +189,15 @@ sudo snap install insomnia
 - [tmpmail](https://github.com/sdushantha/tmpmail) - temp mail addresses via command line
 - [icloud-for-linux](https://snapcraft.io/install/icloud-for-linux/ubuntu) - icloud for linux: makes it ieasier to use the icloud suite under linux
 
+### login screen background
+
+```bash
+wget -qO - https://github.com/PRATAP-KUMAR/ubuntu-gdm-set-background/archive/main.tar.gz | tar zx --strip-components=1 ubuntu-gdm-set-background-main/ubuntu-gdm-set-bac
+sudo ./ubuntu-gdm-set-background --image /home/user/backgrounds/image.jpg
+```
+
+
+
 ## Mac
 
 - [1Password](https://1password.com/downloads/mac/)
