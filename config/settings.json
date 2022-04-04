@@ -115,9 +115,10 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "sync.gist": "a2cf97dfe4fc6104dac31475551e424a",
     "[solidity]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "JuanBlanco.solidity"
     },
     "security.workspace.trust.untrustedFiles": "open",
     "git.confirmSync": false,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "snyk.yesWelcomeNotification": false
 }
