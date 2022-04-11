@@ -165,6 +165,7 @@ sudo snap install insomnia
 - pactl
 - blueman
 - [gtop](https://github.com/aksakalli/gtop) - system monitoring
+- [rclone](https://rclone.org/) - backup files to remote service, like gdrive
 - [neofetch](https://github.com/dylanaraps/neofetch) - information tool
 - [pywal](https://github.com/dylanaraps/pywal) - generate and change color schemes
 - [ktop](https://github.com/ynqa/ktop) - top for k8s
@@ -195,8 +196,6 @@ sudo snap install insomnia
 wget -qO - https://github.com/PRATAP-KUMAR/ubuntu-gdm-set-background/archive/main.tar.gz | tar zx --strip-components=1 ubuntu-gdm-set-background-main/ubuntu-gdm-set-bac
 sudo ./ubuntu-gdm-set-background --image /home/user/backgrounds/image.jpg
 ```
-
-
 
 ## Mac
 
