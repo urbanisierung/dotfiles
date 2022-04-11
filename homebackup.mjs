@@ -27,6 +27,7 @@ const CONFIG_FOLDERS = [
   `i3-resurrect`,
   `rofi`,
   `stripe`,
+  `rclone`,
 ];
 
 const HOME_FOLDERS = [`.config/keys`, `.ssh`];
@@ -56,5 +57,13 @@ for (const file of files) {
 
 for (const folder of folders) {
   console.log(`zip: adding ${folder}`);
-  await $`7za a -spf -r -p${PASS} ${TARGET} ${folder}`;
+  try {
+    await $`7za a -spf -r -p${PASS} ${TARGET} ${folder}`;
+  } catch (error) {
+    console.log(`Failed to add folder ${folder}`);
+  }
 }
+
+// upload backup
+
+await $`rclone copy ${TARGET} gdrive:dev/backup/`;
