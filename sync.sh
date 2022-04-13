@@ -9,11 +9,8 @@ if [ "$1" = "get" ]; then
   cp /etc/i3blocks.conf i3/
   cp ~/.zshrc config/
   cp -r /usr/local/bin/* scripts/
-  # cp ~/.config/scripts/brightness.sh scripts/
-  # cp ~/.config/scripts/lock-lid.sh scripts/
-  # cp ~/.config/scripts/lock.sh scripts/
-  # cp ~/.config/scripts/monitor.sh scripts/
   cp ~/.config/Code/User/settings.json config/
+  cp -r ~/.screenlayout/* screenlayout/
 fi
 
 if [ "$1" = "push" ]; then
@@ -23,6 +20,7 @@ if [ "$1" = "push" ]; then
   cp scripts/* ~/.config/scripts
   cp config/settings.json ~/.config/Code/User/settings.json
   cp i3/config ~/.config/i3/config
+  cp -r screenlayout/* ~/.screenlayout
   sudo cp i3/i3status.conf /etc/
   sudo cp i3/i3blocks.conf /etc/
   sudo cp bin/* /usr/bin

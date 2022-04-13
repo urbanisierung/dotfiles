@@ -17,6 +17,8 @@ font pango:monospace 8
 
 # assign [class="zoom"] $ws1
 
+# screenlayout
+exec --no-startup-id ~/.screenlayout/workplace.sh
 # background pic
 # exec --no-startup-id feh --bg-fill ~/.config/wallpaper/mrrobot.jpg
 exec --no-startup-id feh --bg-fill ~/.config/wallpaper/dreams.png
