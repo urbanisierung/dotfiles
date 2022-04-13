@@ -8,10 +8,11 @@ if [ "$1" = "get" ]; then
   cp /etc/i3status.conf i3/
   cp /etc/i3blocks.conf i3/
   cp ~/.zshrc config/
-  cp ~/.config/scripts/brightness.sh scripts/
-  cp ~/.config/scripts/lock-lid.sh scripts/
-  cp ~/.config/scripts/lock.sh scripts/
-  cp ~/.config/scripts/monitor.sh scripts/
+  cp -r /usr/local/bin/* scripts/
+  # cp ~/.config/scripts/brightness.sh scripts/
+  # cp ~/.config/scripts/lock-lid.sh scripts/
+  # cp ~/.config/scripts/lock.sh scripts/
+  # cp ~/.config/scripts/monitor.sh scripts/
   cp ~/.config/Code/User/settings.json config/
 fi
 
