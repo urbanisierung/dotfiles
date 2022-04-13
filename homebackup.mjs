@@ -30,7 +30,7 @@ const CONFIG_FOLDERS = [
   `rclone`,
 ];
 
-const HOME_FOLDERS = [`.config/keys`, `.ssh`];
+const HOME_FOLDERS = [`.config/keys`, `.ssh`, `.gnupg`];
 
 // FILES
 

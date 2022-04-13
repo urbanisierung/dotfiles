@@ -181,7 +181,7 @@ bindsym $mod+c exec --no-startup-id google-chrome --profile-directory=Default
 bindsym $mod+x exec --no-startup-id code
 
 # start atom
-bindsym $mod+y exec --no-startup-id atom
+bindsym $mod+y exec --no-startup-id gedit
 
 # Lock screen
 bindsym $mod+F11 exec i3lock-fancy
@@ -235,14 +235,14 @@ mode "$mode_zoom" {
 bindsym $mod+z mode "$mode_zoom"
 
 # audio soft keys
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id volup.sh
+bindsym XF86AudioLowerVolume exec --no-startup-id voldown.sh
+bindsym XF86AudioMute exec --no-startup-id voltoggle.sh
+bindsym XF86AudioMicMute exec --no-startup-id mictoggle.sh
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec ~/.config/scripts/brightness.sh + eDP-1
-bindsym XF86MonBrightnessDown exec ~/.config/scripts/brightness.sh - eDP-1
+bindsym XF86MonBrightnessUp exec --no-startup-id brightness.sh + eDP & brightness.sh + eDP-1
+bindsym XF86MonBrightnessDown exec --no-startup-id brightness.sh - eDP & brightness.sh - eDP-1
 
 # Lock shortcut
 bindsym ctrl+$mod+l exec --no-startup-id sleep 1 && ~/.config/scripts/lock.sh
