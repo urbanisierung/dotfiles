@@ -35,6 +35,7 @@ const HOME_FOLDERS = [`.config/keys`, `.ssh`, `.gnupg`];
 // FILES
 
 const HOME_FILES = [
+  `.gitconfig`,
   `.npmrc`,
   `.zsh_history`,
   `.zshrc`,
