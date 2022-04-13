@@ -189,6 +189,7 @@ sudo snap install insomnia
 - [fd](https://github.com/sharkdp/fd) - better `find`
 - [tmpmail](https://github.com/sdushantha/tmpmail) - temp mail addresses via command line
 - [icloud-for-linux](https://snapcraft.io/install/icloud-for-linux/ubuntu) - icloud for linux: makes it ieasier to use the icloud suite under linux
+- [font-awesome]: `sudo apt install fonts-font-awesome` - needed for icons in i3blocks
 
 ### login screen background
 
