@@ -121,5 +121,14 @@
   "security.workspace.trust.untrustedFiles": "open",
   "git.confirmSync": false,
   "editor.inlineSuggest.enabled": true,
-  "snyk.yesWelcomeNotification": false
+  "snyk.yesWelcomeNotification": false,
+  "editor.guides.bracketPairsHorizontal": true,
+  "git.mergeEditor": true,
+  "window.commandCenter": true,
+  "window.titleBarStyle": "custom",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.stickyScroll.enabled": true,
+  "redhat.telemetry.enabled": false
 }

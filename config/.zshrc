@@ -36,15 +36,18 @@ alias e2eint="source ~/.config/envvars/e2e_int.env"
 
 # further exports
 
-export GOPATH=$HOME/work
-export GOROOT=/usr/local/go
-export GOBIN=$GOPATH/bin
-export GO111MODULE=on
+export GOPATH=/usr/local/go/bin
+export PATH=$PATH:$GOPATH
 
-export KUBEBUILDERBIN=/usr/local/kubebuilder/bin
+# export GOPATH=$HOME/work
+# export GOROOT=/usr/local/go
+# export GOBIN=$GOPATH/bin
+# export GO111MODULE=on
 
-export PATH=$KUBEBUILDERBIN:$GOPATH/bin:$GOROOT/bin:$PATH
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+# export KUBEBUILDERBIN=/usr/local/kubebuilder/bin
+
+# export PATH=$KUBEBUILDERBIN:$GOPATH/bin:$GOROOT/bin:$PATH
+# export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 function get_cluster_short() {
   echo "$1" | cut -d _ -f4
