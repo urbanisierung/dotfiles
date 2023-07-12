@@ -79,6 +79,10 @@ sudo apt install code
 
 ### Frameworks and tools
 
+- [Teleport](https://goteleport.com)
+
+  - Installation: [https://goteleport.com/docs/installation/](https://goteleport.com/docs/installation/)
+
 - [Node](https://nodejs.org/en/) - (hopefully) no description needed
 
 ```bash
