@@ -25,6 +25,12 @@ copy all config files to system:
 ./sync.sh push
 ```
 
+## AMD driver
+
+- Drivers: [https://www.amd.com/en/support/linux-drivers](https://www.amd.com/en/support/linux-drivers)
+- Install: `sudo dpkg -i amdgpu-install_*.deb`
+- `amdgpu-install --usecase=graphics,opencl --vulkan=amdvlk --opencl=legacy`
+
 ## Tools
 
 ### [VSCode](https://code.visualstudio.com/) - the most powerful IDE I know
