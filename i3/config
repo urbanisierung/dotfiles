@@ -89,10 +89,19 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
+# open window selector
+bindsym $mod+w exec rofi -show window
+
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+set $mode_layout Layout (s) stacking (w) tabbed (e) toggle split (default)
+mode "$mode_layout" {
+    bindsym s layout stacking
+    bindsym w layout tabbed
+    bindsym e layout toggle split
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+s mode "$mode_layout"
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle

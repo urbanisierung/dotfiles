@@ -2,6 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export PATH=$PATH:/home/adam/.bin/bin
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -35,6 +37,9 @@ alias e2edev="source ~/.config/envvars/e2e_dev.env"
 alias e2eint="source ~/.config/envvars/e2e_int.env"
 
 # further exports
+
+export FLYCTL_INSTALL="/home/adam/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 export GOPATH=/usr/local/go/bin
 export PATH=$PATH:$GOPATH
