@@ -130,5 +130,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.stickyScroll.enabled": true,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "codesnap.transparentBackground": true,
+  "explorer.confirmDelete": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "git.enableCommitSigning": true,
+  "workbench.colorCustomizations": {},
+  "git.ignoreRebaseWarning": true
 }
