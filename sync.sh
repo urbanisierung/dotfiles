@@ -8,7 +8,7 @@ if [ "$1" = "get" ]; then
   cp /etc/i3status.conf i3/
   cp /etc/i3blocks.conf i3/
   cp ~/.zshrc config/
-  cp -r /usr/local/bin/* scripts/
+  cp -r /usr/local/bin/*.sh scripts/
   cp ~/.config/Code/User/settings.json config/
   cp -r ~/.screenlayout/* screenlayout/
 fi
