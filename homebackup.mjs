@@ -41,6 +41,7 @@ const HOME_FILES = [
   `.zshrc`,
   `.config/Code/User/keybindings.json`,
   `.config/Code/User/settings.json`,
+  `.config/google-chrome/Default/Bookmarks`,
 ];
 
 // ZIP FILES
