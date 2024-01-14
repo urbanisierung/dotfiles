@@ -44,6 +44,7 @@ const HOME_FILES = [
   `.config/google-chrome/Default/Bookmarks`, // google chrome bookmarks
   `.local/share/atuin/history.db`, // atuin
   `.config/atuin/config.toml`, // atuin
+  `.config/starship.toml`, // starship
 ];
 
 // ZIP FILES
