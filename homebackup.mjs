@@ -21,13 +21,13 @@ const TARGET = `${HOME}/Documents/backup/${new Date()
 const CONFIG_FOLDERS = [
   `envvars`,
   `fcheatsheets`,
-  `firebase`,
   `gcloud`,
   `i3`,
   `i3-resurrect`,
   `rofi`,
-  `stripe`,
   `rclone`,
+  // `stripe`,
+  // `firebase`,
 ];
 
 const HOME_FOLDERS = [`.config/keys`, `.ssh`, `.gnupg`];
@@ -35,13 +35,15 @@ const HOME_FOLDERS = [`.config/keys`, `.ssh`, `.gnupg`];
 // FILES
 
 const HOME_FILES = [
-  `.gitconfig`,
-  `.npmrc`,
-  `.zsh_history`,
-  `.zshrc`,
-  `.config/Code/User/keybindings.json`,
-  `.config/Code/User/settings.json`,
-  `.config/google-chrome/Default/Bookmarks`,
+  `.gitconfig`, // git
+  `.npmrc`, // npm
+  `.zsh_history`, // zsh
+  `.zshrc`, // zsh
+  `.config/Code/User/keybindings.json`, // vscode
+  `.config/Code/User/settings.json`, // vscode
+  `.config/google-chrome/Default/Bookmarks`, // google chrome bookmarks
+  `.local/share/atuin/history.db`, // atuin
+  `.config/atuin/config.toml`, // atuin
 ];
 
 // ZIP FILES
