@@ -8,6 +8,7 @@ if [ "$1" = "get" ]; then
   cp /etc/i3status.conf i3/
   cp /etc/i3blocks.conf i3/
   cp ~/.zshrc config/
+  cp ~/.config/starship.toml config/
   cp -r /usr/local/bin/*.sh scripts/
   cp ~/.config/Code/User/settings.json config/
   cp -r ~/.screenlayout/* screenlayout/
@@ -21,6 +22,8 @@ if [ "$1" = "push" ]; then
   cp config/settings.json ~/.config/Code/User/settings.json
   cp i3/config ~/.config/i3/config
   cp -r screenlayout/* ~/.screenlayout
+  cp config/.zshrc ~/
+  cp config/starship.toml ~/.config/
   sudo cp i3/i3status.conf /etc/
   sudo cp i3/i3blocks.conf /etc/
   sudo cp bin/* /usr/bin

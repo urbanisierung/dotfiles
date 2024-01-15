@@ -204,6 +204,7 @@ sudo snap install insomnia
 - [starship](https://starship.rs/) - nice terminal addition
 - [nerdfonts](https://www.nerdfonts.com/) - nerd fonts
 - [nushell](https://www.nushell.sh/) - adds useful pipelines to your terminal
+- [exa](https://github.com/ogham/exa) - better ls
 
 ### login screen background
 
