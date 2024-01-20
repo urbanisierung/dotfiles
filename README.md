@@ -205,6 +205,7 @@ sudo snap install insomnia
 - [nerdfonts](https://www.nerdfonts.com/) - nerd fonts
 - [nushell](https://www.nushell.sh/) - adds useful pipelines to your terminal
 - [exa](https://github.com/ogham/exa) - better ls
+- [translate-shell](https://github.com/soimort/translate-shell) - translations in your shell
 
 ### login screen background
 

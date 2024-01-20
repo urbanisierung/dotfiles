@@ -1,5 +1,7 @@
 # check https://starship.rs/config/
 
+# format = "$kubernetes"
+
 [cmd_duration]
 format = "⏱️ [:$duration](underline bold fg:145) "
 
@@ -39,6 +41,12 @@ context_alias = "PROD"
 style = "bold red"
 symbol = "⛵ "
 
+[[kubernetes.contexts]]
+context_pattern = "gke_camunda-distribution_europe-west1-b_distro-ci"
+context_alias = "DISTRI"
+style = "bold yellow"
+symbol = "⛵ "
+
 [gcloud]
 format = 'on [$symbol]($style) '
 symbol = '🇬️ '
@@ -48,6 +56,7 @@ symbol = '🌱 '
 # truncation_length = 4
 truncation_symbol = ''
 ignore_branches = ['master', 'main']
+style = "bg:green black"
 
 [git_status]
 conflicted = '🏳'
