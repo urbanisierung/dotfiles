@@ -91,6 +91,8 @@ bindsym $mod+f fullscreen toggle
 
 # open window selector
 bindsym $mod+w exec rofi -show window
+# open translate-shell
+bindsym $mod+t exec rofi_trans
 
 # change container layout (stacked, tabbed, toggle split)
 set $mode_layout Layout (s) stacking (w) tabbed (e) toggle split (default)
