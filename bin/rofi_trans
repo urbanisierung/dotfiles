@@ -14,8 +14,8 @@ function Configs {
 
     export transHistory="$HOME/.rofi_trans"
     export transAudioCacheDir="$HOME/.rofi_trans_audio"
-    export transTarget="auto"
-    export save_audio="save_audio"
+    export transTarget="en+de"
+    export save_audio="-"
     export transArgs="-b -speak"
     export verbose="1"
     export auto_refresh="1"
