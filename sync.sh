@@ -24,6 +24,7 @@ if [ "$1" = "push" ]; then
   cp -r screenlayout/* ~/.screenlayout
   cp config/.zshrc ~/
   cp config/starship.toml ~/.config/
+  cp config/emoji.txt ~/.config/
   sudo cp i3/i3status.conf /etc/
   sudo cp i3/i3blocks.conf /etc/
   sudo cp bin/* /usr/bin

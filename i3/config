@@ -93,6 +93,8 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+w exec rofi -show window
 # open translate-shell
 bindsym $mod+t exec rofi_trans
+# open emoji picker
+bindsym $mod+e exec emoji
 
 # change container layout (stacked, tabbed, toggle split)
 set $mode_layout Layout (s) stacking (w) tabbed (e) toggle split (default)
