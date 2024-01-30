@@ -206,6 +206,7 @@ sudo snap install insomnia
 - [nushell](https://www.nushell.sh/) - adds useful pipelines to your terminal
 - [exa](https://github.com/ogham/exa) - better ls
 - [translate-shell](https://github.com/soimort/translate-shell) - translations in your shell
+- [crow-translate](https://github.com/crow-translate/crow-translate) - translations in your shell - used with rofi
 
 ### login screen background
 
