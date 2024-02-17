@@ -35,6 +35,8 @@ copy all config files to system:
 
 ### [VSCode](https://code.visualstudio.com/) - the most powerful IDE I know
 
+check [https://code.visualstudio.com/docs/setup/linux](https://code.visualstudio.com/docs/setup/linux)
+
 ```bash
 sudo apt update
 sudo apt install software-properties-common apt-transport-https wget
@@ -44,27 +46,8 @@ sudo apt update
 sudo apt install code
 ```
 
-- Extensions
-  - [Peacock](https://github.com/johnpapa/vscode-peacock) - colorize different projects
-  - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
-  - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-  - Better writing:
-    - [AlexJS - doc linter](https://alexjs.com/)
-    - [Write Good Linter](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
-    - [Vale](https://marketplace.visualstudio.com/items?itemName=testthedocs.vale)
-  - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-  - [NodeJS Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
-  - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
-  - [Cloud Code](https://cloud.google.com/code/docs/vscode/quickstart)
-  - [Code Tour](https://github.com/vsls-contrib/codetour)
-  - [Vuln Cost](https://snyk.io/security-scanner-vuln-cost/)
-  - [i18n-ally](https://github.com/antfu/i18n-ally)
 - Themes:
-  - [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
-  - [Panda](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
   - [Dracula](https://draculatheme.com/visual-studio-code/) HOT
-  - [Yonce](https://yoncetheme.com/)
-  - [serendipity](https://wvsc.dev/)
 - Fonts:
 
   - [Dank Mono](https://dank.sh/)
@@ -85,11 +68,7 @@ sudo apt install code
 
 - [Node](https://nodejs.org/en/) - (hopefully) no description needed
 
-```bash
-sudo apt update
-sudo apt install nodejs
-sudo apt install npm
-```
+use `n` or `nvm`
 
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) - K8s command line tools
 
@@ -149,13 +128,6 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
 - python(3) and pip(3)
-- [insomnia](https://insomnia.rest/download/#ubuntu)
-
-```bash
-sudo snap install insomnia
-```
-
-- Linter for TypeScript/Node: [Aurora](https://github.com/ScreamZ/aurora)
 
 ## System
 
@@ -215,42 +187,14 @@ wget -qO - https://github.com/PRATAP-KUMAR/ubuntu-gdm-set-background/archive/mai
 sudo ./ubuntu-gdm-set-background --image /home/user/backgrounds/image.jpg
 ```
 
-## Mac
+### issues
 
-- [1Password](https://1password.com/downloads/mac/)
-- [Calibbre](https://calibre-ebook.com/)
-- [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - alternative for [Caffeine](http://lightheadsw.com/caffeine/)
-- [Disk Graph](https://apps.apple.com/de/app/disk-graph/id697942581?mt=12)
-- [Affinity Photo](https://apps.apple.com/de/app/affinity-photo/id824183456?mt=12)
-- [Affinity Designer](https://apps.apple.com/us/app/affinity-designer/id824171161?mt=12)
-- [Dropbox](https://www.dropbox.com/downloading)
-- [FileZilla](https://filezilla-project.org/download.php?platform=osx)
-- [Ledger Live](https://shop.ledger.com/pages/ledger-live)
-- [Notion](https://www.notion.so/desktop)
-- [Outbank](https://apps.apple.com/de/app/outbank-alle-banken-und-konten/id1094255754?ls=1&mt=12)
-- [Sonos](http://www.sonos.com/redir/controller_software_mac)
-- [VLC](https://www.videolan.org/vlc/download-macosx.html)
-- [VSCode](https://code.visualstudio.com/download)
-- [Brew](https://brew.sh/)
-- [Vanilla](https://matthewpalmer.net/vanilla/)
-- [Licecap](https://www.cockos.com/licecap/) - create gifs
-- [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+#### Network changed error in chromium based browsers
 
-## Media
+Disable IPv6
 
-- feh
+```bash
+# sudo nano /etc/default/grub
 
-## Browser
-
-- chrome
-- brave
-
-## Colab
-
-- slack
-- zoom
-
-## Fonts
-
-- https://www.zetafonts.com/hagrid#
-- https://www.cufonfonts.com/font/segoe-pro
+GRUB_CMDLINE_LINUX="ipv6.disable=1"
+```
