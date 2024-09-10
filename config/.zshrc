@@ -27,6 +27,12 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export GOPATH=/usr/local/go/bin
 export PATH=$PATH:$GOPATH
 
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
+# asdf
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
+
 PROMPT='$(kube_ps1)'$PROMPT
 
 function zshaddhistory() {
