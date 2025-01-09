@@ -1,3 +1,14 @@
 {
-  "entries": []
+  "entries": [],
+  "files": {
+    "selected": "backup.sh",
+    "opened": [
+      "backup.sh"
+    ],
+    "recentlyOpened": [
+      "backup.sh",
+      ".lifeos/pois/paris.poi.json",
+      ".lifeos/.biolinks.json"
+    ]
+  }
 }
