@@ -29,6 +29,9 @@ export PATH=$PATH:$GOPATH
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share"
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:/home/adam/.local/share/flatpak/exports/share"
+
 # asdf
 . "$HOME/.asdf/asdf.sh"
 . "$HOME/.asdf/completions/asdf.bash"
@@ -62,3 +65,4 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
+export PATH=/home/adam/.nvm/versions/node/v20.8.1/bin:/home/adam/.local/share/zinit/polaris/bin:/home/adam/.asdf/shims:/home/adam/.asdf/bin:/home/adam/.fly/bin:/home/adam/.krew/bin:/home/adam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adam/.local/bin:/home/adam/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin:/home/adam/.bin/bin:/usr/local/go/bin:/opt/nvim-linux64/bin:/home/adam/bin

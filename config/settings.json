@@ -139,5 +139,10 @@
   "workbench.colorCustomizations": {},
   "git.ignoreRebaseWarning": true,
   "editor.codeActionsOnSave": {},
-  "github.copilot.editor.enableAutoCompletions": true
+  "github.copilot.editor.enableAutoCompletions": true,
+  "security.promptForLocalFileProtocolHandling": false,
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "git.replaceTagsWhenPull": true
 }
