@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# local files to git
 if [ "$1" = "get" ]; then
   cp ~/.config/wallpaper/* wallpaper/
   cp /usr/bin/i3exit bin/
@@ -12,14 +13,17 @@ if [ "$1" = "get" ]; then
   cp -r /usr/local/bin/*.sh scripts/
   cp ~/.config/Code/User/settings.json config/
   cp -r ~/.screenlayout/* screenlayout/
+  cp -r ~/.config/zed/* zed/
 fi
 
+# git files to local
 if [ "$1" = "push" ]; then
   mkdir ~/.config/wallpaper
   cp wallpaper/* ~/.config/wallpaper
   mkdir ~/.config/scripts
   cp scripts/* ~/.config/scripts
   cp config/settings.json ~/.config/Code/User/settings.json
+  cp zed/* ~/.config/zed/
   cp i3/config ~/.config/i3/config
   cp -r screenlayout/* ~/.screenlayout
   cp config/.zshrc ~/
