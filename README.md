@@ -179,6 +179,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 - [exa](https://github.com/ogham/exa) - better ls
 - [translate-shell](https://github.com/soimort/translate-shell) - translations in your shell
 - [crow-translate](https://github.com/crow-translate/crow-translate) - translations in your shell - used with rofi
+- [xan](https://github.com/medialab/xan) - view csv files in the terminal
 
 ### login screen background
 
