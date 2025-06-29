@@ -2,7 +2,8 @@
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-shift-O": "editor::SelectSmallerSyntaxNode"
+      "ctrl-shift-O": "editor::SelectSmallerSyntaxNode",
+      "alt-ctrl-g": "git_panel::ToggleFocus"
     }
   }
 ]

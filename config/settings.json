@@ -139,10 +139,18 @@
   "workbench.colorCustomizations": {},
   "git.ignoreRebaseWarning": true,
   "editor.codeActionsOnSave": {},
-  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "autoTrigger": true,
+    "inlineSuggest": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
   "security.promptForLocalFileProtocolHandling": false,
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
-  "git.replaceTagsWhenPull": true
+  "git.replaceTagsWhenPull": true,
+  "terminal.integrated.defaultProfile.linux": "zsh"
+  // "terminal.integrated.automationProfile.linux": {
+  //   "path": "/usr/bin/zsh -i"
+  // }
 }

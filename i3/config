@@ -19,6 +19,9 @@ font pango:monospace 8
 
 # screenlayout
 exec --no-startup-id ~/.screenlayout/workplace.sh
+# audio
+exec --no-startup-id pactl set-default-source alsa_output.usb-0b0e_Jabra_Speak2_75_50C275E208350103040-00.iec958-stereo.monitor
+# exec --no-startup-id pactl set-default-sink alsa_output.usb-0b0e_Jabra_Speak2_75_50C275E208350103040-00.iec958-stereo
 # background pic
 # exec --no-startup-id feh --bg-fill ~/.config/wallpaper/mrrobot.jpg
 exec --no-startup-id feh --bg-fill ~/.config/wallpaper/dreams.png
