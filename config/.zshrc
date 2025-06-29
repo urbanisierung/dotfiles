@@ -17,6 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # ###############################################################################
 
 source ~/.config/envvars/aliases.env
+source ~/.config/envvars/completion-for-pnpm.zsh
 
 # -------------------------------------------------------------------------------
 # THIRD PARTIES
@@ -55,14 +56,22 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # ###############################################################################
 # FURHTER TERMINAL CUSTOMIZATIONS
 # ###############################################################################
 
 eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
-export PATH=/home/adam/.nvm/versions/node/v20.8.1/bin:/home/adam/.local/share/zinit/polaris/bin:/home/adam/.asdf/shims:/home/adam/.asdf/bin:/home/adam/.fly/bin:/home/adam/.krew/bin:/home/adam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adam/.local/bin:/home/adam/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin:/home/adam/.bin/bin:/usr/local/go/bin:/opt/nvim-linux64/bin:/home/adam/bin
+source <(fx --comp zsh)
+export PATH=/home/adam/.local/share/zinit/polaris/bin:/home/adam/.asdf/shims:/home/adam/.asdf/bin:/home/adam/.fly/bin:/home/adam/.krew/bin:/home/adam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adam/.local/bin:/home/adam/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin:/home/adam/.bin/bin:/usr/local/go/bin:/opt/nvim-linux64/bin:/home/adam/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/home/adam/.bun/_bun" ] && source "/home/adam/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

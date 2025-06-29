@@ -29,5 +29,6 @@
         "source.organizeImports": true
       }
     }
-  }
+  },
+  "soft_wrap": "editor_width"
 }
