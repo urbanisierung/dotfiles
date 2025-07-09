@@ -199,3 +199,39 @@ Disable IPv6
 
 GRUB_CMDLINE_LINUX="ipv6.disable=1"
 ```
+
+#### GPG key permanently stored
+
+Useful for git commits.
+
+Config:
+
+```bash
+# ~/.gnupg/gpg-agent.conf
+
+allow-preset-passphrase
+default-cache-ttl 31536000
+max-cache-ttl 31536000
+```
+
+Restart GPG:
+
+```bash
+gpgconf --kill gpg-agent
+gpgconf --launch gpg-agent
+```
+
+Add Passphrase:
+
+```bash
+source ~/.config/envvars/gpg-github.env
+/usr/libexec/gpg-preset-passphrase --preset --passphrase $GPG_PASSPHRASE $GPG_KEYGRIP
+```
+
+Restart GPG agent again (see above).
+
+Hint: if you need the keygrip, use the following command:
+
+```bash
+gpg --list-secret-keys --with-keygrip
+```
