@@ -235,3 +235,10 @@ Hint: if you need the keygrip, use the following command:
 ```bash
 gpg --list-secret-keys --with-keygrip
 ```
+
+Add to `/etc/pam.d/login` the following entries:
+
+```bash
+auth       optional     pam_gnome_keyring.so
+session    optional     pam_gnome_keyring.so auto_start
+```
