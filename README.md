@@ -194,11 +194,29 @@ sudo ./ubuntu-gdm-set-background --image /home/user/backgrounds/image.jpg
 
 Disable IPv6
 
+To disable IPv6, run the following commands one by one:
+
 ```bash
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+```
+
+Reboot your system and check if the problem is resolved or not.
+
+To re-enable it, enter the following commands:
+
+```bash
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
+```
+
+<!-- ```bash
 # sudo nano /etc/default/grub
 
 GRUB_CMDLINE_LINUX="ipv6.disable=1"
-```
+``` -->
 
 #### GPG key permanently stored
 
