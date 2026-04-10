@@ -12,9 +12,12 @@ const HOME = `/home/adam`;
 
 const HOME_CONFIG_BASE = `.config`;
 
-const TARGET = `${HOME}/Documents/backup/${new Date()
-  .toISOString()
-  .substring(0, 16)}-backup.zip`;
+const FILENAME = `${new Date().toISOString().substring(0, 16)}-backup.zip`;
+// Build in /tmp to avoid 7za scanning back through the OverlayFS workdir
+// (/home/adam is an overlay; writing the zip there causes 7za to resolve the
+// physical upperdir path and hang on .jai/default.work/work/).
+const TARGET = `/tmp/${FILENAME}`;
+const LOCAL_TARGET = `${HOME}/Documents/backup/${FILENAME}`;
 
 // FOLDERS
 
@@ -57,18 +60,18 @@ const files = [...HOME_FILES.map((file) => `${HOME}/${file}`)];
 
 for (const file of files) {
   console.log(`zip: adding ${file}`);
-  await $`7za a -spf -p${PASS} ${TARGET} ${file}`;
+  await $`7za a -spf -xr!.jai -p${PASS} ${TARGET} ${file}`;
 }
 
 for (const folder of folders) {
   console.log(`zip: adding ${folder}`);
   try {
-    await $`7za a -spf -r -p${PASS} ${TARGET} ${folder}`;
+    await $`7za a -spf -r -snl -xr!.jai -p${PASS} ${TARGET} ${folder}`;
   } catch (error) {
     console.log(`Failed to add folder ${folder}`);
   }
 }
 
-// upload backup
-
+// upload backup and move to local archive
 await $`rclone copy ${TARGET} gdrive:dev/backup/`;
+await $`mv ${TARGET} ${LOCAL_TARGET}`;
