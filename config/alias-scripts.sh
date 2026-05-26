@@ -56,3 +56,20 @@ tmux-list() {
     print "${name}${active}"
   done
 }
+
+tmux-add() {
+  local name="$1"
+  if [[ -z "$name" ]]; then
+    echo "Usage: tmux-add <name>" >&2; return 1
+  fi
+  local cfg="$HOME/.config/.mytmux"
+  if grep -qE "^${name}:" "$cfg" 2>/dev/null; then
+    echo "Name '${name}' already exists in $cfg" >&2; return 1
+  fi
+  echo "${name}:${PWD}" >> "$cfg"
+  # register the alias immediately
+  local quoted="${(q)name} ${(q)PWD} ${(q)PWD}"
+  eval "${name}() { _tmux_open ${quoted}; }"
+  _tmux_aliases+=("$name")
+  echo "Added ${name} → ${PWD}"
+}
