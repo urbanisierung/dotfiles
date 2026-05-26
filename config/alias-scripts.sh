@@ -1,7 +1,7 @@
 # easy check in
 gcaa() {
   local msg="${1:-wip $(date '+%Y-%m-%d %H:%M:%S')}"
-  git add -A && git commit -m "$msg" && gpsup && (gh pr view >/dev/null 2>&1 || gh pr create --fill)
+  git add -A && git commit -m "${msg:-wip}" && gpsup && (gh pr view >/dev/null 2>&1 || gh pr create --fill)
 }
 
 # tmux functions
@@ -21,28 +21,28 @@ _tmux_open() {
 }
 
 # ── config ────────────────────────────────────────────────────────────────────
-# Format: "alias-name:dir1:dir2:..."
-# alias-name becomes both the shell alias and the tmux session name.
-# Each dir gets its own window. Paths must not contain colons.
+# Reads sessions from ~/.config/.mytmux
+# Format: name:dir1[:dir2:...]
+# The first directory always gets two windows (opened twice).
 typeset -ga _tmux_aliases=()
 
 () {
-  local -a sessions=(
-    "tmux-kh:$HOME/github.com/lifosy/monorepo:$HOME/github.com/lifosy/monorepo"
-    "tmux-lumen:$HOME/github.com/lumen-logic-studio/monorepo:$HOME/github.com/lu>
-    "tmux-erd:$HOME/github.com/data-democracy/monorepo-nextgen:$HOME/github.com/>
-    "tmux-u11g:$HOME/github.com/urbanisierung/urbanisierung.dev:$HOME/github.com>
-    # "tmux4:$HOME"
-  )
-  local entry parts name quoted p
-  for entry in "${sessions[@]}"; do
-    parts=("${(@s/:/)entry}")
+  local cfg="$HOME/.config/.mytmux"
+  [[ -f "$cfg" ]] || return
+  local line parts name quoted p first
+  while IFS= read -r line; do
+    [[ -z "$line" || "$line" == \#* ]] && continue
+    line="${(e)line}"
+    parts=("${(@s/:/)line}")
     name="${parts[1]}"
     _tmux_aliases+=("$name")
     quoted="${(q)name}"
-    for p in "${parts[@]:1}"; do quoted+=" ${(q)p}"; done
+    first="${parts[2]}"
+    # first dir gets two windows
+    quoted+=" ${(q)first} ${(q)first}"
+    for p in "${parts[@]:2}"; do quoted+=" ${(q)p}"; done
     eval "${name}() { _tmux_open ${quoted}; }"
-  done
+  done < "$cfg"
 }
 
 tmux-list() {
